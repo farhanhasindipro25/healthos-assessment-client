@@ -69,7 +69,7 @@ const DashboardLayout = () => {
                       : "btn btn-outline btn-secondary flex justify-center"
                   }
                 >
-                  ADD CUSTOMER
+                  ADD CUSTOMERS
                 </NavLink>
               </li>
               <li className="my-1">
