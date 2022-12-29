@@ -60,11 +60,6 @@ const Login = () => {
             </p>
           )} */}
 
-          <label className="label">
-            <span className="label-text text-slate-900 font-medium text-xs">
-              Forgot Password?
-            </span>
-          </label>
         </div>
         <div className="flex justify-center mt-2">
           <button className="btn btn-secondary w-1/2">LOGIN</button>

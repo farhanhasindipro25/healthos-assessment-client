@@ -15,66 +15,66 @@ import Cart from "../../Pages/Cart/Cart";
 import Checkout from "../../Pages/Checkout/Checkout";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main>,
-        children: [
-            {
-                path: '/',
-                element: <Home></Home>
-            },
-            {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
-                path: '/signup',
-                element: <Signup></Signup>
-            },
-            {
-                path: '/products',
-                element: <Products></Products>
-            },
-            {
-                path: '/cart',
-                element: <Cart></Cart>
-            },
-            {
-                path: '/checkout',
-                element: <Checkout></Checkout>
-            }
-        ]
-    },
-    {
-        path: '/dashboard',
-        element:<DashboardLayout></DashboardLayout>,
-        children: [
-            {
-                path: "/dashboard",
-                element: <Dashboard></Dashboard>
-            },
-            {
-                path: '/dashboard/added-products',
-                element: <AddedProducts></AddedProducts>
-            },
-            {
-                path: '/dashboard/add-products',
-                element: <AddProducts></AddProducts>
-            },
-            {
-                path: '/dashboard/customer-lists',
-                element: <CustomerLists></CustomerLists>
-            },
-            {
-                path: '/dashboard/add-customers',
-                element: <AddCustomers></AddCustomers>
-            },
-            {
-                path: '/dashboard/orders',
-                element: <Orders></Orders>
-            },
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/signup",
+        element: <Signup></Signup>,
+      },
+      {
+        path: "/products",
+        element: <Products></Products>,
+      },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout></Checkout>,
+      },
+    ],
+  },
+  {
+    path: "/admin-dashboard",
+    element: <DashboardLayout></DashboardLayout>,
+    children: [
+      {
+        path: "/admin-dashboard",
+        element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/admin-dashboard/added-products",
+        element: <AddedProducts></AddedProducts>,
+      },
+      {
+        path: "/admin-dashboard/add-products",
+        element: <AddProducts></AddProducts>,
+      },
+      {
+        path: "/admin-dashboard/customer-lists",
+        element: <CustomerLists></CustomerLists>,
+      },
+      {
+        path: "/admin-dashboard/add-customers",
+        element: <AddCustomers></AddCustomers>,
+      },
+      {
+        path: "/admin-dashboard/orders",
+        element: <Orders></Orders>,
+      },
+    ],
+  },
+]);
 
 export default router;
