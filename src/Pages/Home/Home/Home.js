@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import SlidingBanner from "../SlidingBanner/SlidingBanner";
 
 const Home = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <div>
+      <SlidingBanner></SlidingBanner>
+    </div>
+  );
 };
 
 export default Home;

@@ -31,9 +31,7 @@ const Menubar = () => {
       </li>
       <li>
         <NavLink to="/login">
-          <button className="bg-slate-900 text-sm py-2 px-4 text-slate-50 font-semibold rounded-md">
-            LOGIN
-          </button>
+          <button className="btn btn-secondary">LOGIN</button>
         </NavLink>
       </li>
       {/* {user?.uid && (
