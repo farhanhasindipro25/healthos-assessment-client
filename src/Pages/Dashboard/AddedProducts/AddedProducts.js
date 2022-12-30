@@ -3,13 +3,8 @@ import React from "react";
 const AddedProducts = () => {
   return (
     <div>
-      <div className="my-4">
-        <h2 className="text-2xl underline text-slate-900 text-center font-semibold">
-          ADDED PRODUCTS
-        </h2>
-      </div>
       <div>
-        <div className="overflow-x-auto w-full">
+        <div className="overflow-x-auto w-full mt-10">
           <table className="table w-full">
             <thead>
               <tr>

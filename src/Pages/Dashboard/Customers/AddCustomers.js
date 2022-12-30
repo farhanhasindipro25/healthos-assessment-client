@@ -3,14 +3,9 @@ import React from "react";
 const AddCustomers = () => {
   return (
     <div>
-      <div className="my-4">
-        <h2 className="text-2xl underline text-slate-900 text-center font-semibold">
-          ADD CUSTOMERS
-        </h2>
-      </div>
       <div>
         <form
-          className="mt-10 mb-10 p-10 rounded-xl"
+          className="mb-10 p-10 rounded-xl"
           //   onSubmit={handleSubmit(handleAddProduct)}
         >
           <div className="flex gap-2 my-6">
@@ -28,7 +23,7 @@ const AddCustomers = () => {
                 // })}
                 name="customerName"
                 placeholder="Enter Customer Name"
-                className="input input-bordered border-slate-600 bg-slate-50 mb-3 text-secondary font-normal w-full"
+                className="input input-bordered border-slate-300 bg-slate-50 mb-3 text-secondary font-normal w-full"
               />
               {/* {errors.productName && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">
@@ -48,7 +43,7 @@ const AddCustomers = () => {
                 // {...register("productPhoto", {
                 //   required: "Product Photo is required",
                 // })}
-                className="file-input file-input-bordered file-input-secondary text-secondary font-normal w-full"
+                className="file-input file-input-bordered file-input-secondary border-slate-300 bg-slate-50 text-secondary font-normal w-full"
               />
               {/* {errors.productPhoto && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">
@@ -70,7 +65,7 @@ const AddCustomers = () => {
                 // })}
                 name="customerEmailID"
                 placeholder="Enter Customer Email ID"
-                className="input input-bordered border-slate-600 bg-slate-50 mb-3 text-secondary font-normal w-full"
+                className="input input-bordered border-slate-300 bg-slate-50 mb-3 text-secondary font-normal w-full"
               />
               {/* {errors.sellingPrice && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">
@@ -92,7 +87,7 @@ const AddCustomers = () => {
                 // })}
                 name="customerPhone"
                 placeholder="Enter Customer Phone Number"
-                className="input input-bordered border-slate-600 bg-slate-50 mb-3 text-secondary font-normal w-full"
+                className="input input-bordered border-slate-300 bg-slate-50 mb-3 text-secondary font-normal w-full"
               />
               {/* {errors.sellingPrice && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">

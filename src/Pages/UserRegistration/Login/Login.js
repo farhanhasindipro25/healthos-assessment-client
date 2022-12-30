@@ -59,7 +59,6 @@ const Login = () => {
               {errors.password?.message}
             </p>
           )} */}
-
         </div>
         <div className="flex justify-center mt-2">
           <button className="btn btn-secondary w-1/2">LOGIN</button>

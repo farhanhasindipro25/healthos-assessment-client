@@ -3,14 +3,9 @@ import React from "react";
 const AddProducts = () => {
   return (
     <div>
-      <div className="my-4">
-        <h2 className="text-2xl underline text-slate-900 text-center font-semibold">
-          ADD PRODUCTS
-        </h2>
-      </div>
       <div>
         <form
-          className="mt-10 mb-10 p-10 rounded-xl"
+          className="mb-10 p-10 rounded-xl"
           //   onSubmit={handleSubmit(handleAddProduct)}
         >
           <div className="flex gap-2 my-6">
@@ -28,7 +23,7 @@ const AddProducts = () => {
                 // })}
                 name="productName"
                 placeholder="Enter Product Name"
-                className="input input-bordered border-slate-600 bg-slate-50 mb-3 text-secondary font-normal w-full"
+                className="input input-bordered border-slate-300 bg-slate-50 mb-3 text-secondary font-normal w-full"
               />
               {/* {errors.productName && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">
@@ -48,7 +43,7 @@ const AddProducts = () => {
                 // {...register("productPhoto", {
                 //   required: "Product Photo is required",
                 // })}
-                className="file-input file-input-bordered file-input-secondary text-secondary font-normal w-full"
+                className="file-input file-input-bordered file-input-secondary border-slate-300 bg-slate-50 text-secondary font-normal w-full"
               />
               {/* {errors.productPhoto && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">
@@ -70,7 +65,7 @@ const AddProducts = () => {
                 // {...register("productCategory", {
                 //   required: "Product Category is required",
                 // })}
-                className="select select-secondary text-secondary w-full bg-slate-50"
+                className="select select-secondary text-secondary select-bordered border-slate-300 w-full bg-slate-50"
               >
                 <option className="text-secondary">Guitars</option>
                 <option className="text-secondary">Pedals</option>
@@ -98,7 +93,7 @@ const AddProducts = () => {
                 // })}
                 name="sellingPrice"
                 placeholder="Enter Price"
-                className="input input-bordered border-slate-600 bg-slate-50 mb-3 text-secondary font-normal w-full"
+                className="input input-bordered border-slate-300 bg-slate-50 mb-3 text-secondary font-normal w-full"
               />
               {/* {errors.sellingPrice && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">
@@ -120,7 +115,7 @@ const AddProducts = () => {
               //   {...register("productDescription", {
               //     required: "Product Description is required",
               //   })}
-              className="textarea textarea-secondary text-secondary bg-slate-50"
+              className="textarea textarea-secondary text-secondary textarea-bordered border-slate-300 bg-slate-50"
               placeholder="Product Description"
             ></textarea>
             {/* {errors.productDescription && (

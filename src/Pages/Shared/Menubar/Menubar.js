@@ -68,7 +68,7 @@ const Menubar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke="#0f1119"
               >
                 <path
                   strokeLinecap="round"
@@ -80,7 +80,7 @@ const Menubar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-50 rounded-box w-52"
             >
               {menuItems}
             </ul>
