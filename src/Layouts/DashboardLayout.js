@@ -71,7 +71,7 @@ const DashboardLayout = () => {
   return (
     <div>
       <Menubar></Menubar>
-      <div className="drawer container mx-auto mt-8">
+      <div className="drawer container mx-auto mt-14">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           <div className="w-full navbar bg-slate-50 text-slate-900 font-medium">

@@ -9,7 +9,7 @@ const Menubar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "text-slate-100 bg-slate-900 rounded font-semibold text-sm"
+              ? "text-slate-100 bg-slate-900 rounded-none font-semibold text-sm"
               : "text-slate-500 font-semibold text-sm"
           }
         >
@@ -21,7 +21,7 @@ const Menubar = () => {
           to="/products"
           className={({ isActive }) =>
             isActive
-              ? "text-slate-100 bg-slate-900 rounded font-semibold text-sm"
+              ? "text-slate-100 bg-slate-900 rounded-none font-semibold text-sm"
               : "text-slate-500 font-semibold text-sm"
           }
         >
@@ -33,7 +33,7 @@ const Menubar = () => {
           to="/admin-dashboard"
           className={({ isActive }) =>
             isActive
-              ? "text-slate-100 bg-slate-900 rounded font-semibold text-sm"
+              ? "text-slate-100 bg-slate-900 rounded-none font-semibold text-sm"
               : "text-slate-500 font-semibold text-sm"
           }
         >
@@ -47,7 +47,7 @@ const Menubar = () => {
               to="/dashboard"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-success text-secondary rounded font-semibold text-sm"
+                  ? "bg-success text-secondary rounded-none font-semibold text-sm"
                 9: "bg-slate-100 text-accent font-medium text-sm"
               }
             >
@@ -80,7 +80,7 @@ const Menubar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-50 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-50 rounded-none-box w-52"
             >
               {menuItems}
             </ul>

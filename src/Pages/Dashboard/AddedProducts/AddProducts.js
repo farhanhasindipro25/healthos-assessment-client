@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "../../../Hooks/useTitle";
 
 const AddProducts = () => {
+  useTitle("Add Products");
   return (
     <div>
       <div>
@@ -69,7 +71,7 @@ const AddProducts = () => {
               >
                 <option className="text-secondary">Guitars</option>
                 <option className="text-secondary">Pedals</option>
-                <option className="text-secondary">Amplifiers</option>
+                <option className="text-secondary">Processors</option>
               </select>
               {/* {errors.productCategory && (
                 <p className="text-red-400 ml-1 mt-3" role="alert">

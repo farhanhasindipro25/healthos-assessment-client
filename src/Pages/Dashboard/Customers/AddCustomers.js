@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "../../../Hooks/useTitle";
 
 const AddCustomers = () => {
+  useTitle("Add Customers");
   return (
     <div>
       <div>
