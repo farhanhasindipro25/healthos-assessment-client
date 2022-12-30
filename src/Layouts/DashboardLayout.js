@@ -99,6 +99,7 @@ const DashboardLayout = () => {
               <ul className="menu menu-horizontal">{adminActionItems}</ul>
             </div>
           </div>
+
           <Outlet></Outlet>
         </div>
         <div className="drawer-side">
