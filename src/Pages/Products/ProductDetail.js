@@ -26,7 +26,7 @@ const ProductDetail = () => {
           </h2>
           <h2 className="text-success mt-4 font-semibold">
             <span className="text-slate-900">Price: </span>
-            {productPrice}
+            {productPrice} BDT
           </h2>
         </div>
       </div>

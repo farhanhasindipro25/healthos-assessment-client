@@ -16,6 +16,14 @@ const AllProducts = () => {
       })
       .catch((error) => console.error(error));
   }, []);
+
+  const [cart, setCart] = useState([]);
+
+  const handleAddToCart = (product) => {
+    console.log(product, "Clicked");
+    const newCart = [...cart, product];
+    setCart(newCart);
+  };
   return (
     <div>
       <div className="container mx-auto mt-24 min-h-screen">
@@ -25,12 +33,16 @@ const AllProducts = () => {
           {/* Products in the middle*/}
           <div className="grid gap-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 col-span-3">
             {allProducts?.map((product) => (
-              <ProductItem key={product._id} product={product}></ProductItem>
+              <ProductItem
+                key={product._id}
+                product={product}
+                handleAddToCart={handleAddToCart}
+              ></ProductItem>
             ))}
           </div>
           {/* Cart in the right side*/}
-          <div className="w-full bg-slate-500">
-            <Cart></Cart>
+          <div className="w-full">
+            <Cart cart={cart}></Cart>
           </div>
         </div>
       </div>

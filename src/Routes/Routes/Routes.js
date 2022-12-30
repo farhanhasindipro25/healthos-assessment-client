@@ -12,9 +12,9 @@ import AddCustomers from "../../Pages/Dashboard/Customers/AddCustomers";
 import Orders from "../../Pages/Dashboard/Orders/Orders";
 import Cart from "../../Pages/Cart/Cart";
 import Checkout from "../../Pages/Checkout/Checkout";
-import ProductsLayout from "../../Layouts/ProductsLayout";
 import AllProducts from "../../Pages/Products/AllProducts";
 import ProductDetail from "../../Pages/Products/ProductDetail";
+import Products from "../../Pages/Products/Products";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/product-categories/:id",
-        element: <ProductsLayout></ProductsLayout>,
+        element: <Products></Products>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product-categories/${params.id}`),
       },
