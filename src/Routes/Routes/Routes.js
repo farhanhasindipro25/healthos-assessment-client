@@ -13,6 +13,8 @@ import Orders from "../../Pages/Dashboard/Orders/Orders";
 import Cart from "../../Pages/Cart/Cart";
 import Checkout from "../../Pages/Checkout/Checkout";
 import ProductsLayout from "../../Layouts/ProductsLayout";
+import AllProducts from "../../Pages/Products/AllProducts";
+import ProductDetail from "../../Pages/Products/ProductDetail";
 
 const router = createBrowserRouter([
   {
@@ -33,13 +35,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <ProductsLayout></ProductsLayout>,
+        element: <AllProducts></AllProducts>,
       },
       {
         path: "/product-categories/:id",
         element: <ProductsLayout></ProductsLayout>,
         loader: ({ params }) =>
           fetch(`http://localhost:5000/product-categories/${params.id}`),
+      },
+      {
+        path: "/products/:id",
+        element: <ProductDetail></ProductDetail>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/products/${params.id}`),
       },
       {
         path: "/cart",

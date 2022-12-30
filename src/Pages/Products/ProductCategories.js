@@ -17,6 +17,12 @@ const ProductCategories = () => {
   return (
     <div>
       <ul>
+        <li className="text-slate-900 font-semibold text-lg">
+          Product Categories
+        </li>
+        <li className="text-slate-900 font-medium mb-14 text-sm">
+          Select a category for filtering{" "}
+        </li>
         {productCategories.map((category) => (
           <NavLink
             key={category.categoryId}
