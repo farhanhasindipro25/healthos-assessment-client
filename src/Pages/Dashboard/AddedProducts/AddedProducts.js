@@ -3,6 +3,8 @@ import useTitle from "../../../Hooks/useTitle";
 
 const AddedProducts = () => {
   useTitle("Added Products");
+
+  
   return (
     <div>
       <div>

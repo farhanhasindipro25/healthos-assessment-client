@@ -3,7 +3,6 @@ import Main from "../../Layouts/Main";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/UserRegistration/Login/Login";
 import Signup from "../../Pages/UserRegistration/Signup/Signup";
-import Products from "../../Pages/Products/Products";
 import DashboardLayout from "../../Layouts/DashboardLayout";
 import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
 import AddedProducts from "../../Pages/Dashboard/AddedProducts/AddedProducts";
@@ -13,6 +12,7 @@ import AddCustomers from "../../Pages/Dashboard/Customers/AddCustomers";
 import Orders from "../../Pages/Dashboard/Orders/Orders";
 import Cart from "../../Pages/Cart/Cart";
 import Checkout from "../../Pages/Checkout/Checkout";
+import ProductsLayout from "../../Layouts/ProductsLayout";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +33,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <Products></Products>,
+        element: <ProductsLayout></ProductsLayout>,
+      },
+      {
+        path: "/product-categories/:id",
+        element: <ProductsLayout></ProductsLayout>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/product-categories/${params.id}`),
       },
       {
         path: "/cart",
