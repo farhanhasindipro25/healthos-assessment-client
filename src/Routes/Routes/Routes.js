@@ -41,13 +41,17 @@ const router = createBrowserRouter([
         path: "/product-categories/:id",
         element: <Products></Products>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/product-categories/${params.id}`),
+          fetch(
+            `https://healthos-assessment-server.vercel.app/product-categories/${params.id}`
+          ),
       },
       {
         path: "/products/:id",
         element: <ProductDetail></ProductDetail>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(
+            `https://healthos-assessment-server.vercel.app/products/${params.id}`
+          ),
       },
       {
         path: "/cart",

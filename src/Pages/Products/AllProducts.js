@@ -3,12 +3,14 @@ import ProductCategories from "./ProductCategories";
 import axios from "axios";
 import Cart from "../Cart/Cart";
 import ProductItem from "./ProductItem";
+import useTitle from "../../Hooks/useTitle";
 
 const AllProducts = () => {
+  useTitle("Products");
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/products`)
+      .get(`https://healthos-assessment-server.vercel.app/products`)
       .then((data) => {
         const loadedProducts = data.data;
         // console.log(loadedProducts);

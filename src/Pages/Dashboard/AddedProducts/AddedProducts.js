@@ -7,7 +7,7 @@ const AddedProducts = () => {
   const [addedProducts, setAddedProducts] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/products`)
+      .get(`https://healthos-assessment-server.vercel.app/products`)
       .then((data) => {
         const loadedProducts = data.data;
         console.log(loadedProducts);

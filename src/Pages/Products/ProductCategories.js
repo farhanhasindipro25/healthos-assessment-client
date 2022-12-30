@@ -6,7 +6,7 @@ const ProductCategories = () => {
   const [productCategories, setProductCategories] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/product-categories`)
+      .get(`https://healthos-assessment-server.vercel.app/product-categories`)
       .then((data) => {
         const loadedCategories = data.data;
         // console.log(loadedCategories);

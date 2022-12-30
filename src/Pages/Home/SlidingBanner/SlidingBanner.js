@@ -6,11 +6,6 @@ import p3 from "../../../Assets/Banner/p3.jpg";
 const SlidingBanner = () => {
   return (
     <div className="container mx-auto mt-14">
-      <div>
-        <h2 className="text-slate-900 text-center font-bold my-20 text-3xl">
-          Welcome to String Symphony
-        </h2>
-      </div>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img src={p1} className="w-full" alt="" />
