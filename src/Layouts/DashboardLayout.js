@@ -93,7 +93,9 @@ const DashboardLayout = () => {
               </label>
             </div>
             <div className="flex-1 px-2 mx-2">
-              <Link className="font-semibold">ADMIN ACTIONS</Link>
+              <Link className="font-semibold" to="/admin-dashboard">
+                ADMIN ACTIONS
+              </Link>
             </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">{adminActionItems}</ul>
